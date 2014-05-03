@@ -39,4 +39,18 @@
   border-radius: 180px;
   border: 6px solid lighten($green_bkgd, 10%);
   margin-bottom: 1rem;
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		&:first-child {z-index: 1; }
+		&:last-child {z-index: 0; }
+	}
+	&:hover {
+		img {
+			&:first-child {z-index: 0; }
+			&:last-child {z-index: 1; }
+		}
+	}
 }
