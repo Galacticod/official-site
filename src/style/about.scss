@@ -1,0 +1,126 @@
+@import "pieces/mixins";
+
+#the-mission {
+	padding: 3rem 2rem;
+	p { text-align: center; }
+	@include mq(netbook) {
+		padding-bottom: 5rem;
+		p {
+			max-width: 75%;
+			margin: 0 auto 4rem;
+		}
+	}
+	@include mq(netbook) {
+		padding-bottom: 8rem;
+	}
+	position: relative;
+	&:after {
+		content: "\00a0";
+		position: absolute;
+		width: 100%;
+		height: 2rem;
+		left: 0;
+		bottom: -1rem;
+		background-image: url(../img/white_curve02.png);
+		background-size: cover;
+		z-index: 1;
+		@include mq(netbook) {
+			height: 7rem;
+			bottom: -5rem;
+		}
+	}
+}
+
+#leap-img {
+	background-image: url(../img/leap_actionshot.jpg);
+	background-size: cover;
+	min-height: 8rem;
+	position: relative;
+	&:after {
+		content: "\00a0";
+		position: absolute;
+		width: 100%;
+		height: 1rem;
+		left: 0;
+		bottom: 0;
+		background-image: url(../img/white_curve.png);
+		background-size: cover;
+		@include mq(netbook) {
+			height: 2rem;
+		}
+	}
+	@include mq(netbook) {min-height: 25rem; }
+}
+
+
+
+
+#about-the-project {
+	padding: 3rem 1rem;
+	p {margin-bottom: 0;}
+	article {
+		margin-bottom: 3rem;
+		@include mq(netbook) {
+			@include flexbox();		
+		}
+	}
+	// @include mq(netbook) {
+		// padding-bottom: 8rem;
+	// }
+	position: relative;
+	&:after {
+		content: "\00a0";
+		position: absolute;
+		width: 100%;
+		height: 2rem;
+		left: 0;
+		bottom: -1rem;
+		background-image: url(../img/white_curve02.png);
+		background-size: cover;
+		z-index: 1;
+		@include mq(netbook) {
+			height: 7rem;
+			bottom: -3rem;
+		}
+	}
+}
+
+.t2 {
+	font-size: 1.5rem;
+	margin-bottom: 1.25rem;
+	@include mq(netbook) {
+		font-size: 2.25rem;
+	}
+}
+
+.img-first {
+	div {@include order(2);}
+	img, figure {@include order(1);}
+}
+
+#leap-motion {
+	align-items: flex-end;
+	div {@include flex(1); }
+	img {@include flex(2); }
+}
+
+#explore {
+	div {@include flex(2); }
+}
+
+#find-facts {
+	img { 
+		padding: 3rem 1.5rem 0; 
+		max-width: 18.125rem; // 290px
+	}
+	figure {
+		text-align: center;
+	}
+	@include mq(netbook) {
+		div {@include flex(1); }
+		figure {
+			@include flex(1); 
+		}
+		img {padding: 0; }
+	}
+}

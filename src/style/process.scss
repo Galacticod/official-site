@@ -1,0 +1,36 @@
+#the-process {
+	background-image: url(../img/header_bg.jpg);
+	background-size: cover;
+	padding: 4rem 0 6rem;
+	text-align: center;
+	h2 {
+		color: #fff;
+		margin-bottom: 1.25rem;
+	}
+	p {
+		padding-bottom: 1.5rem;
+	}
+	a {
+		background: rgba(104, 184, 185, 1);
+		padding: 1.25rem 2rem 0.875rem;
+		border-radius: 12px;
+	}
+	@include mq(netbook) {
+		padding-bottom: 11rem;
+	}
+
+	position: relative;
+	&:after {
+		content: "\00a0";
+		position: absolute;
+		width: 100%;
+		height: 1rem;
+		left: 0;
+		bottom: 0;
+		background-image: url(../img/blue_curve.png);
+		background-size: cover;
+		@include mq(netbook) {
+			height: 5rem;
+		}
+	}
+}

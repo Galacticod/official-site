@@ -1,0 +1,137 @@
+include html/jade-helpers.jade
+!!! 5
+head
+	title title
+	meta(name="description", content="description")
+	include html/head.jade
+	<script type="text/javascript" src="//use.typekit.net/tpz3dmy.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+body#homepage
+	a(href="#main", class="assistive-text") Skip to main content
+	div.container
+		header#header
+			h1
+				img#logo(src="img/ripple_logo.png", alt="Ripple")
+				span Ripple
+			hgroup
+				h2 EXPLORE THE CORAL REEFS
+				h3 Learn more about the dangers facing our oceans.
+			nav#nav
+				a(href="http://galacticod.tumblr.com/", target="_blank") Blog
+				a(href="#the-team") Team 
+
+
+		div#main
+			section#the-mission
+				div.wrapper
+					h3.t1 THE MISSION
+					p Ripple is an interactive virtual environment which educates users on the threats facing coral reefs.
+					<iframe src="//player.vimeo.com/video/93669276?title=0&amp;byline=0&amp;portrait=0&amp;color=eb5055" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			
+			div#leap-img &nbsp;
+
+			section#about-the-project
+				div.wrapper
+					article#leap-motion.img-first
+						div
+							h3.t2 The LEAP Motion
+							p The LEAP Motion device detects hand gestures, so you can wave your hands to control your fish and propel forward.
+						img(src="img/leap.png", alt="LEAP Motion Controller")
+
+					article#explore
+						div
+							h3.t2 Explore a 3D World
+							p Experience a fully rendered 3D environment built entirely in Unity. This includes texturing, lighting, and filtering.
+						img(src="img/clownfish.png", alt="You can explore our world as a clownfish")
+
+					article#find-facts.img-first
+						div
+							h3.t2 Find the Facts
+							p As you explore, you'll come across various facts about the threats facing oceans and coral reefs today. These include Overfishing, Marine Debris, Oil Pollution, Acidification, and Mass Extinction.
+						figure
+							img(src="img/overfishing_icon.png")
+
+			section#the-process
+				h2.t1 THE PROCESS
+				p Learn more about our process by visiting our blog.
+				a#tumblr-link(href="http://galacticod.tumblr.com/", target="_blank")
+					img(src="img/tumblr.png", alt="Tumblr")
+
+			section#the-team
+				h2.t1 MEET THE TEAM
+				ul#team-list
+					li
+						figure.profile-pic
+							img(src="img/galacticod/sarah.jpg", data-fish-face="sarah_fish.jpg", data-normal-face="sarah.jpg")
+						h3 SARAH SAELI
+						p Designer
+					li
+						figure.profile-pic
+							img(src="img/galacticod/brian.jpg", data-fish-face="brian_fish.jpg", data-normal-face="brian.jpg")
+						h3 BRIAN AUTAR
+						p Developer
+					li
+						figure.profile-pic
+							img(src="img/galacticod/sean1.jpg", data-fish-face="sean_fish.jpg", data-normal-face="sean1.jpg")
+						h3 SEAN VICKERY
+						p Designer
+					li
+						figure.profile-pic
+							img(src="img/galacticod/luis.jpg", data-fish-face="luis_fish.jpg", data-normal-face="luis.jpg")
+						h3 LUIS ROSARIO
+						p Developer
+					li
+						figure.profile-pic
+							img(src="img/galacticod/tom.jpg", data-fish-face="tom_fish.jpg", data-normal-face="tom.jpg")
+						h3 TOM KEMPER
+						p Designer
+					li
+						figure.profile-pic
+							img(src="img/galacticod/wilson.jpg", data-fish-face="wilson_fish.jpg", data-normal-face="wilson.jpg")
+						h3 WILSON BELL
+						p Developer
+					li
+						figure.profile-pic
+							img(src="img/galacticod/jimmy1.jpg", data-fish-face="jimmy_fish.jpg", data-normal-face="jimmy1.jpg")
+						h3 JIMMY DETWILER
+						p Developer
+					li
+						figure.profile-pic
+							img(src="img/galacticod/zohran.jpg", data-fish-face="zohran_fish.jpg", data-normal-face="zohran.jpg")
+						h3 ZOHRAN LAKDAWALA
+						p Developer
+					li
+						figure.profile-pic
+							img(src="img/galacticod/name.jpg", data-fish-face="_fish.jpg", data-normal-face="name.jpg")
+						h3 JAKE BELLISSIMO
+						p Composer
+
+			section#thanks
+				div.wrapper
+					h2.t1 SPECIAL THANKS
+					p We would like to thank everyone who contributed their time, knowledge, and resources to help Ripple come to fruition.
+
+					div.columns
+						ul.thank-you-list
+							li Adam Smith
+							li Nancy Doubleday
+							li Remy DeCausemaker
+							li Stephen Jacobs
+							li Chris Cascoili
+							li Gordon Goodman
+							li Our friends &amp; family
+						ul.thank-you-list
+							li The Aquarium of Niagara
+							li Dan Arcara
+							li Mark Shareiko
+							li Damian Atkinson
+							li Pierre Semaan
+							li Byron Conn
+
+		footer#footer
+			p Team Galacticod &copy; 2014
+
+
+	include html/foot.jade
+</html>

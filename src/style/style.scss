@@ -1,0 +1,95 @@
+// base styles
+@import "pieces/normalize";
+@import "pieces/vars";
+@import "pieces/mixins";
+@import "pieces/classes";
+@import "pieces/base";
+
+iframe {
+	max-width: 100%;
+	height: 50%;
+	@include mq(netbook) {
+		height: 33.75rem;
+	}
+}
+img {
+	max-width: 100%;
+}
+figure {
+	margin: 0;
+}
+h1, h2, h3 {
+	margin: 0;
+	line-height: 1;
+
+}
+
+p {
+	color: $green_text;
+	font-size: 1.75rem;
+	font-family: $museo;
+}
+h1, h2, h3 {
+	font-family: $museo-sans;
+}
+
+.t1 {
+	font-size: 1rem;
+	text-align: center;
+	margin: 1.5rem 0 2rem;
+}
+.wrapper {
+	max-width: 57.5rem;
+	margin: 0 auto;
+}
+.typekit-badge {
+	display: none !important;
+}
+
+@import "header";
+@import "about";
+@import "process";
+@import "team";
+
+#thanks {
+	background: rgba(9, 43, 50, 1);
+	padding: 2rem 1rem 3rem;
+	h2, ul {color: #fff; }
+	p {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+}
+
+.columns {
+	max-width: 36.25rem; // 580
+	@include mq(netbook) {
+		@include flexbox();
+		margin-left: 20%;
+	}
+}
+
+.thank-you-list {
+	list-style: none;
+	font-size: 1.25rem;
+	text-align: center;
+	@include flex(1);
+	li {
+		margin-bottom: 0.75rem;
+	}
+	@include mq(netbook) {
+		text-align: left;
+	}
+}
+
+
+#footer {
+	background: rgba(6, 31, 35, 1);
+	padding: 1.5rem;
+	text-align: center;
+	p {
+		color: darken($green_text, 2%);
+		font-size: 1.25rem;
+		margin: 0;
+	}
+}
