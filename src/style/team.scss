@@ -40,17 +40,25 @@
   border: 6px solid lighten($green_bkgd, 10%);
   margin-bottom: 1rem;
 	position: relative;
-	img {
+	img, div {
 		position: absolute;
 		top: 0;
 		left: 0;
-		&:first-child {z-index: 1; }
-		&:last-child {z-index: 0; }
+	}
+	div {
+		width: 100%;
+		bottom: 0;
+		background-size: cover;
+		opacity: 0;
+		border-radius: 180px;
+		@include transition(opacity, 0.1s);
+		// z-index: 0;
 	}
 	&:hover {
-		img {
-			&:first-child {z-index: 0; }
-			&:last-child {z-index: 1; }
+		div {
+			opacity: 1;
 		}
+		// img {z-index: 0;}
+		// div {z-index: 1;}
 	}
 }
