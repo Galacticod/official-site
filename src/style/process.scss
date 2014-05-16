@@ -14,9 +14,13 @@
 		padding-bottom: 1.5rem;
 	}
 	a {
-		background: rgba(104, 184, 185, 1);
 		padding: 1.25rem 2rem 0.875rem;
 		border-radius: 12px;
+		background: #68b8ba;
+		color: #ebebeb;
+		border-radius: 12px;
+		@include transition(background, 0.3s);
+		&:hover {background: #7bc3c5; }
 	}
 	@include mq(netbook) {
 		padding-bottom: 11rem;
