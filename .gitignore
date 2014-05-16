@@ -1,2 +1,3 @@
 build/debug
 src/node_modules
+*.zip

@@ -71,6 +71,9 @@ module.exports = function(grunt) {
 
     // copy files (font, img, js)
     copy: {
+      zip: {
+        files: [{expand: true, cwd: '.', src:['*.zip'], dest: '../build/debug/'}]
+      },
       font: {
         files: [{expand: true, cwd: 'style/fonts', src:['**'], dest: '../build/debug/style/fonts'}]
       },
@@ -195,6 +198,8 @@ module.exports = function(grunt) {
       'css',
       'copy:font',
       'copy:js',
+      'copy:img',
+      'copy:zip',
       'js',
       'jade:pages',
       'jade:modules',
